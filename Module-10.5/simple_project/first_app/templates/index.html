@@ -9,30 +9,30 @@
     <h1>This is home page.</h1>
 
     
-    <h3>{{proverb}}</h3>
+    <h3>{{proverb}}</h3>   <!-- The join filter is used to join the elements of a list with a string and outputs a string.  -->
     <h3>{{ proverb | join:" - "}}</h3>
     <h3>{{ proverb | join:" // "}}</h3>
     <h3>{{ proverb | join:" ? "}}</h3>
     <h3>{{ birthday | date }}<h3> <!-- The time filter is used to format time according to the given format. -->
     <h3>{{ birthday | date:"D d M Y" }}<h3>
     <h3>{{ birthday | date:"SHORT_DATE_FORMAT" }}<h3>
-    <h3>{{ val | default:"Nothing here"}}</h3>
-    <h3>{{ num | add:"5"}} </h3>
+    <h3>{{ val | default:"Nothing here"}}</h3>  <!-- The default filter is used to set a default value to a variable.  -->
+    <h3>{{ num | add:"5"}} </h3>   <!-- The add filter is used to add the argument to the value. -->
     <h3>{{ numList | add:"[5, 6, 7]"}} </h3>
-    <h3>{{ cap | capfirst}} </h3>
-    <h3>{{ strCut | cut:" "}} </h3>
+    <h3>{{ cap | capfirst}} </h3>  <!-- The capfirst filter is used to capitalize the first character of the value. -->
+    <h3>{{ strCut | cut:" "}} </h3>   <!-- The cut filter is used to remove all occurrences of the argument from the given string.  -->
     <h3>{{ strCut1 | cut:"-"}} </h3>
-    <h3>{{ sort | dictsort:"name"}} </h3>
+    <h3>{{ sort | dictsort:"name"}} </h3>   <!-- The dictsort filter is used to sort a list of dictionaries and returns that list sorted by the key specified as the argument. -->
     <h3>{{ sort | dictsort:"age"}} </h3>
-    <h3>{{ Escape | escape}} </h3>
-    <h3>{{ list | first}} </h3>
-    <h3>{{ list | last}} </h3>
-    <h3>{{ leng | length }} </h3>
+    <h3>{{ Escape | escape}} </h3>   <!-- The escape filter is used to escape a string’s HTML. -->
+    <h3>{{ list | first}} </h3>   <!-- The first filter is used to get the first item in a list. -->
+    <h3>{{ list | last}} </h3>     <!-- The last filter is used to get the last item in a list. -->
+    <h3>{{ leng | length }} </h3>   <!-- The length filter is used to return the length of the value. -->
     <h3>{{ lengt | length }} </h3>
-    <h3>{{ linenum | linenumbers }} </h3>
-    <h3>{{ lowercase | lower }} </h3>
-    <h3>{{ uppercase | upper }} </h3>
-    <h3>{{ titlefi | title }} </h3>
+    <h3>{{ linenum | linenumbers }} </h3>   <!-- The linenumbers filter is used to display text with line numbers. -->
+    <h3>{{ lowercase | lower }} </h3>       <!-- The lower filter is used to convert a string to lowercase. -->
+    <h3>{{ uppercase | upper }} </h3>   <!-- The upper filter is used to convert a string to uppercase.  -->
+    <h3>{{ titlefi | title }} </h3>    <!-- The title filter is used to format a string in the title case. -->
     <h3>{{ ran | random }} </h3> <!-- The random filter is used to return a random item from the given list. -->
     <h3>{{ slicelist | slice:":3"}}</h3> <!--  The slice filter is used to return a slice of the given list.  -->
     <h3>{{ timefi | time:"H:i" }} </h3>
@@ -45,7 +45,7 @@
     <h3>{{ brief | truncatewords:6}}</h3> <!--  The truncatewords filter is used to truncate a string after a certain number of words. -->
     <h3>{{ scrip | striptags}} </h3>  <!-- The striptags is used to remove all [X]HTML tags from the value it is piped against.  -->
     <h3>{{ makeList | make_list}} </h3>  <!-- The make_list filter is used to turn a value into a list. For a string, it’s a list of characters. -->
-    
+
 </body>
 </html>
 
