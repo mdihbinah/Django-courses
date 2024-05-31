@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is home page.</h1>
+
+    
+    <h3>{{proverb}}</h3>
+    <h3>{{ proverb | join:" - "}}</h3>
+    <h3>{{ proverb | join:" // "}}</h3>
+    <h3>{{ proverb | join:" ? "}}</h3>
+    <h3>{{ birthday | date }}<h3> <!-- The time filter is used to format time according to the given format. -->
+    <h3>{{ birthday | date:"D d M Y" }}<h3>
+    <h3>{{ birthday | date:"SHORT_DATE_FORMAT" }}<h3>
+    <h3>{{ val | default:"Nothing here"}}</h3>
+    <h3>{{ num | add:"5"}} </h3>
+    <h3>{{ numList | add:"[5, 6, 7]"}} </h3>
+    <h3>{{ cap | capfirst}} </h3>
+    <h3>{{ strCut | cut:" "}} </h3>
+    <h3>{{ strCut1 | cut:"-"}} </h3>
+    <h3>{{ sort | dictsort:"name"}} </h3>
+    <h3>{{ sort | dictsort:"age"}} </h3>
+    <h3>{{ Escape | escape}} </h3>
+    <h3>{{ list | first}} </h3>
+    <h3>{{ list | last}} </h3>
+    <h3>{{ leng | length }} </h3>
+    <h3>{{ lengt | length }} </h3>
+    <h3>{{ linenum | linenumbers }} </h3>
+    <h3>{{ lowercase | lower }} </h3>
+    <h3>{{ uppercase | upper }} </h3>
+    <h3>{{ titlefi | title }} </h3>
+    <h3>{{ ran | random }} </h3> <!-- The random filter is used to return a random item from the given list. -->
+    <h3>{{ slicelist | slice:":3"}}</h3> <!--  The slice filter is used to return a slice of the given list.  -->
+    <h3>{{ timefi | time:"H:i" }} </h3>
+    <h3>{{ timefi | time:"H\h i\m" }} </h3> <!-- The time filter is used to format time according to the given format. The given format can be the predefined TIME_FORMAT or a custom format. -->
+    <h3> {{ mydate | timesince:timefi}} </h3>  <!-- The timesince filter is used to format a date as the time since that date (for example, “5 days, 4 hours”).
+    This filter also takes an optional argument that is a variable containing the date to use as the comparison point (without the argument, the comparison point is now). -->
+    <h3>{{ mydate | timesince }}</h3>
+    <h3>{{ brief | truncatechars:6}}</h3> <!-- The truncatechars filter is used to truncate a string if it is longer than the specified number of characters. -->
+    <h3>{{ brief | wordcount}}</h3> <!-- The wordcount filter returns the number of words in a string. -->
+    <h3>{{ brief | truncatewords:6}}</h3> <!--  The truncatewords filter is used to truncate a string after a certain number of words. -->
+    <h3>{{ scrip | striptags}} </h3>  <!-- The striptags is used to remove all [X]HTML tags from the value it is piped against.  -->
+    <h3>{{ makeList | make_list}} </h3>  <!-- The make_list filter is used to turn a value into a list. For a string, it’s a list of characters. -->
+    
+</body>
+</html>
+
